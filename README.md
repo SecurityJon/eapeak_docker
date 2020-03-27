@@ -38,7 +38,7 @@ To run the tool against all SSIDs it can see, use the below
 
 `sudo docker run -it --net="host" --privileged -e WIFIINTERFACE=<Name In Here> securityjon_eapeak:1.0`
 
-To get inside the Docker container and run the tool with more options. The tool is contained within /eapeak
+To get inside the Docker container and run the tool with more options. The tool is contained within /eapeak and can be ran with `pipenv run /eapeak/eapeak`
 
 `sudo docker run -it --net="host" --privileged --entrypoint /bin/bash securityjon_eapeak:1.0`
 
