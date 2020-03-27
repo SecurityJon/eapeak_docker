@@ -144,9 +144,9 @@ RUN cd /eapeak && pipenv install --deploy --ignore-pipfile --two
 
 #Create the file to be run on startup and set the wifi to monitor mode
 RUN touch /run.sh
-RUN echo ip link set $WIFIINTERFACE  down >> /run.sh
-RUN echo iw $WIFIINTERFACE  set monitor none >> /run.sh
-RUN echo ip link set $WIFIINTERFACE  up >> /run.sh
+RUN echo ip link set \$WIFIINTERFACE  down >> /run.sh
+RUN echo iw \$WIFIINTERFACE  set monitor none >> /run.sh
+RUN echo ip link set \$WIFIINTERFACE  up >> /run.sh
 
 #Create the start up file which controls eapeak
 RUN echo \#\!\/bin\/bash >> /run.sh
