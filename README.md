@@ -12,7 +12,7 @@ Build Instructions
 =======
 
 ```
-git clone https://github.com/SecurityJon/epeak_docker.git
+git clone https://github.com/SecurityJon/eapeak_docker.git
 cd eapeak_docker
 sudo docker build -t securityjon_eapeak:1.0 .
 ```
