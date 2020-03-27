@@ -3,6 +3,8 @@ Summary
 
 EAPeak is a tool designed to information gathering EAP networks prior to an attack with a tool like EAPHammer. It will capture EAP requests from clients connecting into a network and gather usernames(PEAP/LEAP) and certificate information passively, allowing an attacker to replicate this network more closely, or to use the information to further probe the enabled radius options for a network.
 
+Project can be found here: https://github.com/securestate/eapeak
+
 My Spin
 =======
 
