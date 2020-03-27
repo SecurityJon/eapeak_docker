@@ -24,6 +24,10 @@ First we will force the host to kill off any access to the wifi interfaces
 
 `sudo airmon-ng check kill`
 
+Now make sure the Wifi interface is up
+
+`sudo ip link set <interface name> up`
+
 To run the tool against a specific SSID, use the below
 
 `sudo docker run -it --net="host" --privileged -e WIFIINTERFACE=<Name In Here> -e SSID="<Name In Here>" securityjon_eapeak:1.0`
